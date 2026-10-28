@@ -93,6 +93,11 @@ h3 { font-size: 1.25rem; }
   filter: brightness(1.12) contrast(1.04) saturate(1.05);
 }
 .hero .conteneur { padding-top: 40px; padding-bottom: 48px; }
+/* Téléphone en vertical : on recadre sur le groupe (moins de plafond et de tatami) */
+@media (max-width: 600px) {
+  .hero img { aspect-ratio: 2.35 / 1; object-position: center 62%; }
+  .hero .conteneur { padding-top: 28px; padding-bottom: 36px; }
+}
 .hero h1 { color: #fff; margin-bottom: .25em; }
 .hero p { font-size: 1.2rem; max-width: 36em; margin: 0 0 1.5em; }
 .surtitre {
