@@ -86,13 +86,13 @@ h3 { font-size: 1.25rem; }
 }
 
 /* ---------- Bandeau d'accueil ---------- */
-.hero {
-  position: relative; color: #fff; background: var(--encre);
-  min-height: min(78vh, 640px); display: flex; align-items: flex-end;
+/* La photo de groupe est affichée en pleine lumière, le texte est placé en dessous */
+.hero { color: #fff; background: var(--encre); }
+.hero img {
+  width: 100%; height: auto; max-height: 72vh; object-fit: cover; object-position: center 45%;
+  filter: brightness(1.12) contrast(1.04) saturate(1.05);
 }
-.hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .8; }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,18,16,.9) 0%, rgba(20,18,16,.55) 45%, rgba(20,18,16,.1) 100%); }
-.hero .conteneur { position: relative; z-index: 1; padding-top: 80px; padding-bottom: 56px; width: 100%; }
+.hero .conteneur { padding-top: 40px; padding-bottom: 48px; }
 .hero h1 { color: #fff; margin-bottom: .25em; }
 .hero p { font-size: 1.2rem; max-width: 36em; margin: 0 0 1.5em; }
 .surtitre {
