@@ -89,6 +89,14 @@ h3 { font-size: 1.25rem; }
 /* La photo de groupe est affichée en pleine lumière, le texte est placé en dessous */
 .hero { color: #fff; background: var(--encre); }
 .hero img { width: 100%; height: auto; display: block; filter: brightness(1.05); }
+.hero-photo { position: relative; display: block; cursor: zoom-in; text-decoration: none; }
+.hero-photo .indice { display: none; }
+@media (max-width: 600px) {
+  .hero-photo .indice {
+    display: block; text-align: right; color: #cfc8be; font-size: .8rem; font-weight: 600;
+    padding: 6px 20px 0;
+  }
+}
 .hero .conteneur { padding-top: 40px; padding-bottom: 48px; }
 @media (max-width: 600px) {
   .hero .conteneur { padding-top: 28px; padding-bottom: 36px; }
